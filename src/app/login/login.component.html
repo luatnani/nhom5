@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Hệ thống quản lý nhân viên</title>
+</head>
+<body style="background-image: url('https://placeimg.com/1000/1000/any');">
+    <div class="login-form mt-5 col-4 offset-4 text-center" >
+            <form action="#" method="post" class="mt-2">
+                <img src="assets/img/logo.png">
+                <h2 class="text-center">Đăng nhập hệ thống</h2>
+                <div class="form-group has-error">
+                    <input type="text" class="form-control" name="username" placeholder="Tài khoản" required="required" [(ngModel)]="username">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Mật khẩu" required="required" [(ngModel)]="password">
+                </div>
+                <ul class="form-group">
+                    <input type="checkbox" id="brand1" value="">
+                    <label for="brand1"><span></span>&nbsp; Ghi nhớ mật khẩu</label>
+                
+                </ul>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" (click)="signIn()"> Đăng nhập</button>
+                    <br>
+                    <p><a class="w3_play_icon1" tyle="submit" href="newacc"> Tạo tài khoản mới</a></p>
+                    <!-- <div class="clear"></div> -->
+                </div>
+            </form>
+    </div>
+</body>
+</html>
